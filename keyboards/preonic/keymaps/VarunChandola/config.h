@@ -22,6 +22,16 @@
 
 #define MIDI_BASIC
 
+#undef TAPPING_TOGGLE
+#define TAPPING_TOGGLE 2
+
+// Mouse Config
+#define MOUSEKEY_INTERVAL 16
+#define MOUSEKEY_DELAY 0
+#define MOUSEKEY_TIME_TO_MAX 60
+#define MOUSEKEY_MAX_SPEED 7
+#define MOUSEKEY_WHEEL_DELAY 0
+
 /* enable advanced MIDI features:
    - MIDI notes can be added to the keymap
    - Octave shift and transpose
