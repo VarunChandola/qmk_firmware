@@ -1,0 +1,10 @@
+SRC += muse.c
+
+EXTRAFLAGS += -flto
+CONSOLE_ENABLE = no
+MOUSEKEY_ENABLE = yes
+EXTRAKEY_ENABLE = yes # Audio control and System control
+# ENCODER_ENABLE = yes
+KEY_LOCK_ENABLE = yes
+# KEY_OVERRIDE_ENABLE = yes
+DYNAMIC_MACRO_ENABLE = yes
