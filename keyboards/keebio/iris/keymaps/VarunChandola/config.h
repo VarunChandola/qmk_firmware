@@ -1,22 +1,26 @@
 #pragma once
 
 #define MASTER_LEFT
-// #define RGBLIGHT_ANIMATIONS
-#define RGBLIGHT_EFFECT_ALTERNATING
-#define RGBLIGHT_EFFECT_BREATHING
-#define RGBLIGHT_EFFECT_RAINBOW_SWIRL
-#define RGBLIGHT_EFFECT_TWINKLE
+#define RGBLIGHT_ANIMATIONS
+// #define RGBLIGHT_MODE_TWINKLE
+// #define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_TWINKLE
+// #undef RGBLIGHT_EFFECT_CHRISTMAS
+// #undef RGBLIGHT_EFFECT_RGB_TEST
+// #define RGBLIGHT_MODE_STATIC_LIGHT
+// #define RGBLIGHT_MODE_BREATHING
+// #define RGBLIGHT_MODE_RAINBOW_MOOD
+// #define RGBLIGHT_MODE_RAINBOW_SWIRL
+// #define RGBLIGHT_MODE_SNAKE
+// #define RGBLIGHT_MODE_KNIGHT
+// #define RGBLIGHT_MODE_STATIC_GRADIENT
 
 // Synchronization functionality for split keyboard
 #define RGBLIGHT_SPLIT
 // RGB lighting will be switched off when the host goes to sleep
 #define RGBLIGHT_SLEEP
 
-#define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_STATIC_LIGHT
-
 #define RGBLIGHT_LAYERS
 #define RGBLIGHT_LAYER_BLINK
-#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
 
 // default but important
 #define TAPPING_TERM 200
@@ -47,3 +51,10 @@
 #define MOUSEKEY_MAX_SPEED      6
 #undef MOUSEKEY_TIME_TO_MAX
 #define MOUSEKEY_TIME_TO_MAX    64
+
+// // Space saving
+// #define NO_ACTION_ONESHOT
+// #define NO_ACTION_TAPPING
+// #define NO_MUSIC_MODE
+// // Limit to 8 layers
+// #define LAYER_STATE_8BIT

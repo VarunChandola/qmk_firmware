@@ -94,6 +94,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                             KC_GT,   KC_RPRN, KC_UNDS,                 KC_NA,   KC_NA,   KC_NA 
 )};
 
+#if defined(ENCODER_MAP_ENABLE)
+
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
+    [QWERTY] =   { ENCODER_CCW_CW(KC_VOLU, KC_VOLD) },
+    [COLEMAK_DH] = { ENCODER_CCW_CW(KC_VOLU, KC_VOLD) },
+    [NSL] =  { ENCODER_CCW_CW(RGB_HUI, RGB_HUD) }, // Color
+    [NSSL] =  { ENCODER_CCW_CW(RGB_VAI, RGB_VAD) }, // Brightness
+    [FUNL] = { ENCODER_CCW_CW(RGB_SAI, RGB_SAD) }, // Saturation
+    [MOUR] = { ENCODER_CCW_CW(RGB_MOD, RGB_RMOD) }, // Mode
+};
+
+#endif
+
 // const rgblight_segment_t PROGMEM _lr[] = RGBLIGHT_LAYER_SEGMENTS( {3, 1, HSV_GREEN}, {8, 2, HSV_GREEN} );
 // const rgblight_segment_t PROGMEM _history[] = RGBLIGHT_LAYER_SEGMENTS( {0, 12, HSV_GREEN} );
 // const rgblight_segment_t PROGMEM _window_switch[] = RGBLIGHT_LAYER_SEGMENTS( {0, 12, HSV_RED} );
